@@ -19,7 +19,7 @@ jobs:
       - name: Build Docker image app
         run: docker build -t jrodga1604/react-test -f ./client/Dockerfile.dev ./client
 
-#////////////
+#////////////``
 
       - name: Run tests
         run: docker run -e CI=true jrodga1604/react-test npm test
